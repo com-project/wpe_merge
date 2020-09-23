@@ -21,7 +21,7 @@ log_format="%(asctime)s %(levelname)s %(message)s"
 log_filename= 'wpe_merge.log'
 
 logging.basicConfig(filename=log_filename,
-                    level=levels['warning'],
+                    level=levels['debug'],
                     format=log_format, 
                     filemode='w'
                     )

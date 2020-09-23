@@ -48,12 +48,13 @@ def get_data_from_api(url):
 def merge_data(input_data, api_response_data):
     
     if input_data and api_response_data:
+        logger.info('merged data for account_id {}: {}'.format(input_data['Account ID'],[ ('First Name',input_data['First Name']),('Created On',input_data['Created On']), ('status',api_response_data['status']), ('status_set_on', api_response_data['created_on'])]))
+        
         return csv_data(input_data['Account ID'], input_data['First Name'],input_data['Created On'], api_response_data['status'], api_response_data['created_on'] )
 
     return
 
 def append_to_file(out_csv_file, result_set):
-    print('append')
     with open(out_csv_file, mode='a+') as csv_file:
         fieldnames=["Account ID", "First Name", "Created On", "Status", "Status Set On"]
         writer = csv.DictWriter( csv_file, fieldnames = fieldnames)
@@ -98,7 +99,7 @@ def get_accounts_data(input_csv_file):
                         logger.info('getting data for account_id:  {}'.format(account_id))
                         distinct_accounts.add(account_id)
                         api_response_data = get_data_from_api(get_url(account_id))
-                        logger.info('data for account_id {}: {}'.format(account_id, api_response_data))
+                        logger.info('Api data for account_id {}: {}'.format(account_id, api_response_data))
                         result_values.append(merge_data(row,api_response_data))
 
         return result_values
@@ -108,17 +109,10 @@ def get_accounts_data(input_csv_file):
 
 # function to merge the data and save the file
 def write_to_output_file(out_csv_file, result_set, append=False):
-
-    # If append functionality is required, set append to true. 
-    # by default output file will be overwritten
-    if append:
-        logger.info('appending data to the output file....')
-        append_to_file(out_csv_file, result_set)
-    
     # overwrite the file
-    else:
-        logger.info('writing data to the output file....')
-        overwrite_file(out_csv_file, result_set)
+    logger.info('writing data to the output file....')
+    overwrite_file(out_csv_file, result_set)
+    logger.info('Done writing to the output file!!')
 
 class csv_data():
     def __init__(self,account_id, first_name='',created_on='', status='', status_set_on=''):

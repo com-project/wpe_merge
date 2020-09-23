@@ -1,0 +1,39 @@
+2020-09-23 10:26:33,124 INFO Logger initialized
+2020-09-23 10:26:33,124 INFO read accounts data...
+2020-09-23 10:26:33,125 INFO getting data for account_id:  12345
+2020-09-23 10:26:33,134 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:33,389 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/12345 HTTP/1.1" 200 62
+2020-09-23 10:26:33,390 INFO Api data for account_id 12345: {'account_id': 12345, 'status': 'good', 'created_on': '2011-01-12'}
+2020-09-23 10:26:33,390 INFO merged data for account_id 12345: [('First Name', 'Lex'), ('Created On', '1/12/11'), ('status', 'good'), ('status_set_on', '2011-01-12')]
+2020-09-23 10:26:33,390 INFO getting data for account_id:  8172
+2020-09-23 10:26:33,392 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:33,602 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/8172 HTTP/1.1" 200 63
+2020-09-23 10:26:33,603 INFO Api data for account_id 8172: {'account_id': 8172, 'status': 'closed', 'created_on': '2015-09-01'}
+2020-09-23 10:26:33,603 INFO merged data for account_id 8172: [('First Name', 'Victor'), ('Created On', '11/19/14'), ('status', 'closed'), ('status_set_on', '2015-09-01')]
+2020-09-23 10:26:33,603 INFO getting data for account_id:  1924
+2020-09-23 10:26:33,606 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:33,799 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/1924 HTTP/1.1" 200 62
+2020-09-23 10:26:33,800 INFO Api data for account_id 1924: {'account_id': 1924, 'status': 'fraud', 'created_on': '2012-03-01'}
+2020-09-23 10:26:33,800 INFO merged data for account_id 1924: [('First Name', 'Max'), ('Created On', '2/29/12'), ('status', 'fraud'), ('status_set_on', '2012-03-01')]
+2020-09-23 10:26:33,800 INFO getting data for account_id:  222222
+2020-09-23 10:26:33,803 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:33,998 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/222222 HTTP/1.1" 200 63
+2020-09-23 10:26:33,998 INFO Api data for account_id 222222: {'account_id': 222222, 'status': 'poor', 'created_on': '2014-01-02'}
+2020-09-23 10:26:33,998 INFO merged data for account_id 222222: [('First Name', "Ra's"), ('Created On', '3/1/12'), ('status', 'poor'), ('status_set_on', '2014-01-02')]
+2020-09-23 10:26:33,998 INFO getting data for account_id:  48213
+2020-09-23 10:26:34,000 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:34,186 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/48213 HTTP/1.1" 200 67
+2020-09-23 10:26:34,187 INFO Api data for account_id 48213: {'account_id': 48213, 'status': 'high risk', 'created_on': '2015-08-15'}
+2020-09-23 10:26:34,187 INFO merged data for account_id 48213: [('First Name', 'Wilson'), ('Created On', '7/7/15'), ('status', 'high risk'), ('status_set_on', '2015-08-15')]
+2020-09-23 10:26:34,187 INFO getting data for account_id:  918299
+2020-09-23 10:26:34,189 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:34,380 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/918299 HTTP/1.1" 200 63
+2020-09-23 10:26:34,381 INFO Api data for account_id 918299: {'account_id': 918299, 'status': 'good', 'created_on': '2014-06-01'}
+2020-09-23 10:26:34,381 INFO merged data for account_id 918299: [('First Name', 'Norman'), ('Created On', '4/29/14'), ('status', 'good'), ('status_set_on', '2014-06-01')]
+2020-09-23 10:26:34,381 INFO getting data for account_id:  88888
+2020-09-23 10:26:34,384 DEBUG Starting new HTTP connection (1): interview.wpengine.io:80
+2020-09-23 10:26:34,567 DEBUG http://interview.wpengine.io:80 "GET /v1/accounts/88888 HTTP/1.1" 200 69
+2020-09-23 10:26:34,568 INFO Api data for account_id 88888: {'account_id': 88888, 'status': 'collections', 'created_on': '2015-08-08'}
+2020-09-23 10:26:34,568 INFO merged data for account_id 88888: [('First Name', 'Otto'), ('Created On', '8/8/13'), ('status', 'collections'), ('status_set_on', '2015-08-08')]
+2020-09-23 10:26:34,568 INFO writing data to the output file....
+2020-09-23 10:26:34,569 INFO Done writing to the output file!!
