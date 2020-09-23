@@ -17,14 +17,16 @@
 
 # mac
 * `chmod 0744 wpe_merge.sh`
-* `./wpe_merge.sh /path/input_file.csv /path/output_file.csv`
+* `./wpe_merge.sh <input_file.csv> <output_file.csv>`
 * example :
-* `./wpe_merge.sh /Users/gitRepo/wpe_merge/input_file.csv /Users/gitRepo/wpe_merge/output_file.csv`
+* `./wpe_merge.sh tests/resource/input.csv output_file.csv`
 
 # windows
-* `./wpe_merge.bat /path/input_file.csv /path/output_file.csv`
+* `wpe_merge.bat <input_file.csv> <output_file.csv>`
 * example :
-* `./wpe_merge.bat /Users/gitRepo/wpe_merge/input_file.csv /Users/gitRepo/wpe_merge/output_file.csv`
+* `wpe_merge.bat test/resource/input_file.csv output_file.csv`
+
+* log file <wpe_merge.log> gets generated at the project level directory
 
 ## Unit tests
 ### Running tests
