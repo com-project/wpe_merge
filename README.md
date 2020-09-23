@@ -15,13 +15,13 @@
 
 ## run the utility
 
-# mac
-    * `chmod 0744 wpe_merge.sh`
+* mac
+    *  `chmod 0744 wpe_merge.sh`
     * `./wpe_merge.sh <input_file.csv> <output_file.csv>`
     * example :
     * `./wpe_merge.sh tests/resource/input.csv output_file.csv`
 
-# windows
+* windows
     * `wpe_merge.bat <input_file.csv> <output_file.csv>`
     * example :
     * `wpe_merge.bat test/resource/input_file.csv output_file.csv`
