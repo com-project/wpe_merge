@@ -1,7 +1,7 @@
 # wpe_merge
 
 ## Pre-requirements
-* `python 3.7.x`
+* `python 3.x.x`
 * `curl`
 
 # Steps to install pip
