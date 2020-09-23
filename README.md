@@ -1,7 +1,9 @@
 # wpe_merge
 ## Usage
-* chmod 0744 wpe_merge.sh
-* ./wpe_merge.sh /Users/gitRepo/wpe_merge/input_file.csv /Users/gitRepo/wpe_merge/output_file.csv 
+* `chmod 0744 wpe_merge.sh`
+* `./wpe_merge.sh /path/input_file.csv /path/output_file.csv`
+* example :
+* `./wpe_merge.sh /Users/gitRepo/wpe_merge/input_file.csv /Users/gitRepo/wpe_merge/output_file.csv`
 
 ## Requirements
 * `python 3.7.x`
