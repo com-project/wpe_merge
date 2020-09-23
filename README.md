@@ -1,6 +1,6 @@
 # wpe_merge
 
-## prerequirements
+## Pre-requirements
 * `python 3.7.x`
 * `curl`
 
@@ -9,18 +9,18 @@
 * Then run the following command in the folder where you have downloaded get-pip.py
 * `python get-pip.py`
 
-# project dependencies 
+# Project dependencies 
 * To install dependencies run
     * `pip install -r requirements.txt`
 
-## run the utility
+## Run the utility
 
-### mac
+### Mac
    *  `chmod 0744 wpe_merge.sh`
    * `./wpe_merge.sh <input_file.csv> <output_file.csv>`
    * example : `./wpe_merge.sh tests/resource/input.csv output_file.csv`
 
-### windows
+### Windows
    * `wpe_merge.bat <input_file.csv> <output_file.csv>`
    * example :  `wpe_merge.bat test/resource/input_file.csv output_file.csv`
 
