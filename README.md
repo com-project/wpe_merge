@@ -18,7 +18,7 @@
 ## Run the utility
 
 ### Mac
-   * if multiple versions <python2 and python3> is installed on a machine, update the shell script with the following
+   * if python2 and python3 is installed on a machine, update the shell script with the following
    ```
       #!/bin/sh
       python3 merge.py $1 $2
