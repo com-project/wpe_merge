@@ -1,6 +1,8 @@
 # wpe_merge
 
 ## About
+ merge applications reads from the provided CSV file and combines its information
+ with data from the API (http://interview.wpengine.io/v1/docs/) and outputs to a new CSV file.
 
 ## Pre-requirements
 * `python 3.x.x`
