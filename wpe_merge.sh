@@ -1,2 +1,2 @@
 #!/bin/sh
-python merge.py $1 $2
+python3 merge.py $1 $2
