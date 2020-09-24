@@ -178,17 +178,19 @@ def get_accounts_data(input_csv_file):
             headers = d_reader.fieldnames
 
             for row in accounts_list:
+                if 'Account ID' in row:
+                    account_id = row['Account ID']
+                    if account_id and account_id not in distinct_accounts:
+                        logger.info('getting data for account_id:  {}'.format(account_id))
+                        distinct_accounts.add(account_id)
 
-                account_id = row['Account ID']
-                if account_id and account_id not in distinct_accounts:
-                    logger.info('getting data for account_id:  {}'.format(account_id))
-                    distinct_accounts.add(account_id)
-
-                    # get endpoint url
-                    endpoint_url = get_endpoint_url(account_id)
-                    api_response_data = get_data_from_api(endpoint_url)
-                    logger.info('Api data for account_id {}: {}'.format(account_id, api_response_data))
-                    result_values.append(merge_data(row,api_response_data))
+                        # get endpoint url
+                        endpoint_url = get_endpoint_url(account_id)
+                        api_response_data = get_data_from_api(endpoint_url)
+                        logger.info('Api data for account_id {}: {}'.format(account_id, api_response_data))
+                        result_values.append(merge_data(row,api_response_data))
+                else:
+                    raise Exception('invalid input file, no header with Account ID')
 
         return result_values
 

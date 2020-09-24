@@ -15,6 +15,8 @@ ROOT_DIR = path.abspath(os.curdir)
 resource_dir = path.join(ROOT_DIR,'tests', 'resource')
 input_file = path.join(resource_dir, 'input.csv')
 empty_input_file = path.join(resource_dir, 'input_empty.csv')
+error_input_file = path.join(resource_dir, 'input_error.csv')
+invalid_input_file = path.join(resource_dir, 'invalid_input.csv')
 out_file = path.join(resource_dir, 'output.csv')
 
 class TestUtils(unittest.TestCase):
@@ -122,3 +124,15 @@ class TestUtils(unittest.TestCase):
     def test_wpe_merge_2(self):
         result_set = helper.get_accounts_data(empty_input_file)
         self.assertEqual(result_set,None) 
+
+     # test to merge the accounts from empty file
+    
+    # test to merge the accounts with error input file
+    # expected an Exception
+    def test_wpe_merge_3(self):
+        self.assertRaises(Exception, helper.get_accounts_data, error_input_file)
+    
+    # test with invalid input file
+    # expected an Exception
+    def test_wpe_merge_4(self):
+        self.assertRaises(Exception, helper.get_accounts_data, invalid_input_file)
