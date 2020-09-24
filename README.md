@@ -18,11 +18,11 @@
 ## Run the utility
 
 ### Mac
-   * if multiple versions <python2 and python3> is installed on machine, update the shell script with the following
-   * ```
-   #!/bin/sh
-   python3 merge.py $1 $2
-   * ```
+   * if multiple versions <python2 and python3> is installed on a machine, update the shell script with the following
+   ```
+      #!/bin/sh
+      python3 merge.py $1 $2
+   ```
    *  `chmod 0744 wpe_merge.sh`
    * `./wpe_merge.sh <input_file.csv> <output_file.csv>`
    * example : `./wpe_merge.sh tests/resource/input.csv output_file.csv`
